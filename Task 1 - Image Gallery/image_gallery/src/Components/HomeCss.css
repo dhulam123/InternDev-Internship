@@ -1,0 +1,108 @@
+.username-container{
+    width: 100%;
+    height: 70px;
+    background-color: crimson;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 50px;
+}
+
+.username-container span{
+    color: white;
+}
+
+.username-container button{
+    padding: 10px 30px;
+    border: none;
+    font-size: 18px;
+    background-color: white;
+    box-shadow: 2px 2px grey;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.category-actions{
+    margin-top: 30px;
+    padding: 20px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.category-actions button{
+    background-color: crimson;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 5px;
+    color: white;
+    box-shadow: 1px 2px black;
+}
+
+.category-actions button:hover{
+    cursor: pointer;
+}
+
+.image-container{
+    width: 90%;
+    height: auto;
+    margin: 50px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly; 
+    gap: 50px;
+}
+
+.image-container .card{
+    width: 25%;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    transition: all ease-in 0.5s;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    padding-bottom: 15px;
+}
+
+.image-container .card:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.image-container .card .card-img{
+    width: 100%;
+    height: 200px;
+    display: grid;
+    place-items: center;
+}
+
+.image-container .card .card-img img{
+    width: 80%;
+    height: 150px;
+    object-fit: contain;
+}
+
+.image-container .card .title{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.image-container .card .category{
+    width: 55%;
+    margin: 15px;
+    text-align: center;
+}
+
+.image-container .card h2{
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 599;
+    color: white;
+    background-color: crimson;
+}
+
+.image-container .card .desc{
+    padding: 0px 25px;
+    text-align:justify;
+    font-size: 14px;
+}

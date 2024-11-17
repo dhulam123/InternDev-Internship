@@ -1,0 +1,167 @@
+.splash-screen .count {
+    background-color: white;
+    color: crimson;
+    height: 60px;
+    width: 60px;
+}
+
+.splash-screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: crimson;
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    animation: slide linear 3s;
+}
+
+@keyframes slide {
+    0% {
+        opacity: 0;
+        transform: translateX(0px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(-400px);
+    }
+}
+
+.banner {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.banner .container {
+    width: 350px;
+    height: 400px;
+}
+
+.login {
+    width: 350px;
+    height: 380px;
+    background-color: white;
+    transition: all ease 0.5s;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.register {
+    width: 380px;
+    height: 520px;
+    background-color: white;
+    transition: all ease 0.5s;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.banner .title {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner .title h2 {
+    width: 50%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    font-size: 20px;
+    color: crimson;
+}
+
+.active1 {
+    background-color: crimson;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    color: white !important;
+}
+
+.active2 {
+    background-color: crimson;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    color: white !important;
+}
+
+form {
+    width: 100%;
+    padding: 20px 30px;
+}
+
+form .form-container {
+    height: 300px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form-container .input-field {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 20px;
+    gap: 10px;
+}
+
+.form-container .input-field span {
+    color: red;
+}
+
+.form-container .input-field label {
+    width: 100%;
+}
+
+.form-container .input-field input {
+    width: 100%;
+    padding: 7px;
+    border: 1px solid silver;
+    outline: 0;
+    border-radius: 3px;
+}
+
+.form-container .input-field input:focus {
+    border: 1px solid crimson;
+}
+
+.form-container .action-button {
+    width: 100%;
+    padding: 20px;
+}
+
+.form-container .action-button input {
+    width: 100%;
+    padding: 13px;
+    background-color: crimson;
+    color: white;
+    border: 0;
+    outline: 0;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.banner .adminBtn {
+    border: none;
+    background-color: transparent;
+    color: crimson;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all ease-in 0.5s;
+}
+
+.banner .adminBtn:hover {
+    transform: scale(1.04);
+}
